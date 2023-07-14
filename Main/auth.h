@@ -1,0 +1,1 @@
+boolean http_auth(String UUID);
