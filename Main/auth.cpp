@@ -3,6 +3,7 @@
 #include "status_manager.h"
 
 #define SERVER_IP "http://192.168.1.71:8000/"
+// String UUID = "7E48A7A8-AB3C-484C-8EBA-027FB8F84F44"
 
 boolean http_auth(String UUID){
     
@@ -13,7 +14,7 @@ boolean http_auth(String UUID){
 
     Serial.print("[HTTP] begin...\n");
     // Configurando la url para la peticion http
-    http.begin(client, SERVER_IP "auth/" );  // HTTP
+    http.begin(client, SERVER_IP "api/v1/gps/" );  // HTTP
     http.addHeader("Content-Type", "application/json");
 
     Serial.print("[HTTP] POST...\n");

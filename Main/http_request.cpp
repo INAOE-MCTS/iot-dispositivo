@@ -11,7 +11,7 @@ void http_post(const String data){
 
     Serial.print("[HTTP] begin...\n");
     // Configurando la url para la peticion http
-    http.begin(client, SERVER_IP "gps/data/" );  // HTTP
+    http.begin(client, SERVER_IP "api/v1/data/" );  // HTTP
     http.addHeader("Content-Type", "application/json");
 
     Serial.print("[HTTP] POST...\n");
